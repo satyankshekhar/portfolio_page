@@ -6,13 +6,53 @@ interface P {
   year: string;
   hue: string;
   stack: string[];
+  href: string;
+  blurb?: string;
 }
 
 const PROJECTS: P[] = [
-  { id: "01", span: 8, title: "Neural Atlas", category: "Realtime ML / WebGPU", year: "2026", hue: "from-[#00FFCC]/20 to-[#7000FF]/10", stack: ["WebGPU", "Rust", "WGSL"] },
-  { id: "02", span: 4, title: "Obsidian OS", category: "Operating Layer", year: "2025", hue: "from-[#7000FF]/25 to-[#00FFCC]/5", stack: ["TypeScript", "Tauri"] },
-  { id: "03", span: 4, title: "Halcyon", category: "Generative Audio", year: "2025", hue: "from-[#00FFCC]/15 to-transparent", stack: ["Web Audio", "DSP"] },
-  { id: "04", span: 8, title: "Cartograph Engine", category: "Spatial Visualization", year: "2024", hue: "from-[#7000FF]/15 to-[#00FFCC]/10", stack: ["Three.js", "GLSL", "Python"] },
+  {
+    id: "01",
+    span: 8,
+    title: "Parallel Lyrebird Optimization",
+    category: "HPC / GPGPU",
+    year: "2025",
+    hue: "from-[#00FFCC]/20 to-[#7000FF]/10",
+    stack: ["CUDA", "OpenMP", "C++"],
+    href: "https://github.com/satyankshekhar",
+    blurb: "14× CUDA · 1.13× OpenMP",
+  },
+  {
+    id: "02",
+    span: 4,
+    title: "Agentic RAG System",
+    category: "LLM / Automation",
+    year: "2025",
+    hue: "from-[#7000FF]/25 to-[#00FFCC]/5",
+    stack: ["LangGraph", "Calendly API"],
+    href: "https://github.com/satyankshekhar",
+  },
+  {
+    id: "03",
+    span: 4,
+    title: "Weed Detection",
+    category: "Computer Vision",
+    year: "2024",
+    hue: "from-[#00FFCC]/15 to-transparent",
+    stack: ["YOLOv8", "Mask R-CNN"],
+    href: "https://github.com/satyankshekhar",
+  },
+  {
+    id: "04",
+    span: 8,
+    title: "Edge Distillation Pipeline",
+    category: "Knowledge Distillation",
+    year: "2026",
+    hue: "from-[#7000FF]/15 to-[#00FFCC]/10",
+    stack: ["PyTorch", "CUDA", "ONNX"],
+    href: "https://github.com/satyankshekhar",
+    blurb: "3-stage deep learning pipeline optimized for edge inference.",
+  },
 ];
 
 export function ProjectMatrix() {
@@ -26,21 +66,22 @@ export function ProjectMatrix() {
           </h2>
         </div>
         <p className="hidden max-w-xs text-sm text-text-dim md:block">
-          Four pieces from the last 24 months. Each one shipped, instrumented, and still in motion.
+          Four pieces spanning HPC, computer vision, and agentic systems — research-grade work, shipped and measured.
         </p>
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
         {PROJECTS.map((p) => (
-          <article
+          <a
             key={p.id}
+            href={p.href}
+            target="_blank"
+            rel="noreferrer"
             data-magnetic="true"
             className={`group relative overflow-hidden border border-stroke bg-surface-1 transition-all ${p.span === 8 ? "md:col-span-8" : "md:col-span-4"}`}
             style={{ transition: "border-color 0.6s var(--ease-inertia)" }}
           >
-            <div
-              className={`relative h-[420px] w-full overflow-hidden bg-gradient-to-br ${p.hue}`}
-            >
+            <div className={`relative h-[420px] w-full overflow-hidden bg-gradient-to-br ${p.hue}`}>
               <div
                 className="absolute inset-0 opacity-60 transition-transform duration-[1200ms] group-hover:scale-[1.06]"
                 style={{
@@ -48,10 +89,11 @@ export function ProjectMatrix() {
                     "radial-gradient(circle at 30% 40%, rgba(0,255,204,0.15), transparent 60%), radial-gradient(circle at 70% 70%, rgba(112,0,255,0.18), transparent 60%)",
                 }}
               />
-              {/* grid lines */}
-              <div className="absolute inset-0 opacity-30"
+              <div
+                className="absolute inset-0 opacity-30"
                 style={{
-                  backgroundImage: "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+                  backgroundImage:
+                    "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
                   backgroundSize: "48px 48px",
                 }}
               />
@@ -70,9 +112,17 @@ export function ProjectMatrix() {
                   <h3 className="font-display text-3xl font-bold tracking-tight text-white md:text-5xl">
                     {p.title}
                   </h3>
+                  {p.blurb && (
+                    <p className="mt-3 max-w-md font-mono text-[11px] uppercase tracking-[0.2em] text-primary">
+                      {p.blurb}
+                    </p>
+                  )}
                   <div className="mt-4 flex flex-wrap gap-2">
                     {p.stack.map((s) => (
-                      <span key={s} className="border border-stroke px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-text-dim">
+                      <span
+                        key={s}
+                        className="border border-stroke px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-text-dim"
+                      >
                         {s}
                       </span>
                     ))}
@@ -83,7 +133,7 @@ export function ProjectMatrix() {
                 </span>
               </div>
             </div>
-          </article>
+          </a>
         ))}
       </div>
     </section>

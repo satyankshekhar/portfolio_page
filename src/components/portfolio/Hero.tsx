@@ -1,7 +1,7 @@
 import { Scramble } from "./Scramble";
 
 export function Hero() {
-  const headline = ["Engineering", "interfaces", "with intent."];
+  const headline = ["Engineering", "intelligence", "at scale."];
   return (
     <section
       id="hero"
@@ -10,7 +10,7 @@ export function Hero() {
       <div className="mb-10 flex items-center gap-4">
         <span className="h-px w-10 bg-secondary" />
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-secondary">
-          // Portfolio — v.2026.E1
+          // Satyank Shekhar — Portfolio v.2026.E1
         </p>
       </div>
 
@@ -34,9 +34,11 @@ export function Hero() {
       </h1>
 
       <p className="mt-10 max-w-xl text-base leading-[1.6] text-text-dim md:text-lg">
-        A personal digital laboratory. Systems, shaders, and interfaces — built by{" "}
-        <span className="text-white">[Your Name]</span>, an independent engineer designing
-        software that feels inevitable.
+        M.Tech CSE @ <span className="text-white">SVNIT Surat</span>. GATE AIR{" "}
+        <span className="text-white">2741</span>. I build at the seam of{" "}
+        <span className="text-white">High-Performance Computing</span>,{" "}
+        <span className="text-white">GPU-accelerated ML</span>, and scalable systems —
+        bridging deep learning with the silicon underneath.
       </p>
 
       <div className="mt-14 flex flex-wrap items-center gap-6">
@@ -58,12 +60,11 @@ export function Hero() {
         </a>
       </div>
 
-      {/* corner marks */}
       <div className="pointer-events-none absolute left-6 bottom-8 hidden font-mono text-[10px] uppercase tracking-[0.3em] text-text-faint md:block">
         ↓ scroll · synced @ 60hz
       </div>
       <div className="pointer-events-none absolute right-6 bottom-8 hidden font-mono text-[10px] uppercase tracking-[0.3em] text-text-faint md:block">
-        lat 0.000 · lng 0.000
+        surat · india · 21.17n 72.78e
       </div>
     </section>
   );

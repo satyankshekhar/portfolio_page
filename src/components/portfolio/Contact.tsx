@@ -55,9 +55,16 @@ export function Contact() {
         </h2>
       </div>
 
+      <div className="mb-14 grid gap-3 font-mono text-xs uppercase tracking-[0.25em] text-text-dim md:grid-cols-4">
+        <a href="mailto:satyank.shekhar14@gmail.com" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ Email</a>
+        <a href="https://linkedin.com/in/satyankshekhar" target="_blank" rel="noreferrer" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ LinkedIn</a>
+        <a href="https://x.com/satyankshekhar" target="_blank" rel="noreferrer" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ X / Twitter</a>
+        <a href="https://kaggle.com/satyankshekhar21cs16" target="_blank" rel="noreferrer" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ Kaggle</a>
+      </div>
+
       <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
         <form
-          onSubmit={(e) => { e.preventDefault(); }}
+          onSubmit={(e) => { e.preventDefault(); window.location.href = `mailto:satyank.shekhar14@gmail.com?subject=From ${encodeURIComponent(name)}&body=${encodeURIComponent(msg)}`; }}
           className="space-y-2"
         >
           <Field label="client_name" value={name} onChange={setName} />
@@ -86,7 +93,7 @@ export function Contact() {
             <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
             <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
             <span className="ml-3 font-mono text-xs text-text-dim">
-              user@portfolio:~/contact_session
+              satyank@svnit:~/contact_session
             </span>
           </div>
           <pre className="overflow-x-auto p-6 font-mono text-[12px] leading-[1.7] text-text-dim">
@@ -107,8 +114,8 @@ export function Contact() {
       </div>
 
       <footer className="mt-32 flex flex-col items-start justify-between gap-4 border-t border-stroke pt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-text-faint md:flex-row md:items-center">
-        <span>© 2026 · crafted in the dark</span>
-        <span>signal: <span className="text-primary">stable</span> · latency 12ms</span>
+        <span>© 2026 satyank shekhar · crafted in the dark</span>
+        <span>signal: <span className="text-primary">stable</span> · svnit surat</span>
       </footer>
     </section>
   );
