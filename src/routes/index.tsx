@@ -1,26 +1,48 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CustomCursor } from "@/components/portfolio/CustomCursor";
+import { ParticleField } from "@/components/portfolio/ParticleField";
+import { Header } from "@/components/portfolio/Header";
+import { LeftHUD, RightHUD } from "@/components/portfolio/SideHUD";
+import { Hero } from "@/components/portfolio/Hero";
+import { ProjectMatrix } from "@/components/portfolio/ProjectMatrix";
+import { Archive } from "@/components/portfolio/Archive";
+import { Contact } from "@/components/portfolio/Contact";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "AX · Engineered Interfaces" },
+      { name: "description", content: "A personal digital laboratory — systems, shaders, and interfaces built with intent." },
+      { property: "og:title", content: "AX · Engineered Interfaces" },
+      { property: "og:description", content: "A personal digital laboratory — systems, shaders, and interfaces built with intent." },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="relative min-h-screen overflow-x-hidden bg-background text-foreground grain">
+      <div className="mesh-blur"><span /></div>
+      <ParticleField />
+      <CustomCursor />
+      <Header />
+      <LeftHUD />
+      <RightHUD />
+      <div className="relative z-10">
+        <Hero />
+        <ProjectMatrix />
+        <Archive />
+        <Contact />
+      </div>
+    </main>
+  );
 }
