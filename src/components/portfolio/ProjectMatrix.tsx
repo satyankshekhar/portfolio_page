@@ -35,7 +35,7 @@ export function ProjectMatrix() {
           <article
             key={p.id}
             data-magnetic="true"
-            className={`group relative overflow-hidden border border-stroke bg-surface-1 transition-all md:col-span-${p.span === 8 ? "8" : "4"}`}
+            className={`group relative overflow-hidden border border-stroke bg-surface-1 transition-all ${p.span === 8 ? "md:col-span-8" : "md:col-span-4"}`}
             style={{ transition: "border-color 0.6s var(--ease-inertia)" }}
           >
             <div
