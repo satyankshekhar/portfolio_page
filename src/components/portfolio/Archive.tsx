@@ -3,16 +3,19 @@ import { useMemo, useState } from "react";
 interface Row { year: string; title: string; cat: string; tech: string[]; }
 
 const ROWS: Row[] = [
-  { year: "2026", title: "Photon Sampler", cat: "Research", tech: ["WebGPU", "WGSL"] },
-  { year: "2025", title: "Latticework", cat: "Tooling", tech: ["Rust", "WASM"] },
-  { year: "2025", title: "Drift Compositor", cat: "Graphics", tech: ["GLSL", "Three.js"] },
-  { year: "2024", title: "Beacon Protocol", cat: "Systems", tech: ["Go", "gRPC"] },
-  { year: "2024", title: "Anvil DSL", cat: "Language", tech: ["TypeScript"] },
-  { year: "2023", title: "Subharmonic", cat: "Audio", tech: ["DSP", "C++"] },
-  { year: "2023", title: "Index Mirror", cat: "Search", tech: ["Python", "FAISS"] },
+  { year: "2026", title: "Edge Distillation Pipeline", cat: "ML", tech: ["PyTorch", "CUDA"] },
+  { year: "2025", title: "Parallel Lyrebird Optimization", cat: "HPC", tech: ["CUDA", "OpenMP"] },
+  { year: "2025", title: "Agentic RAG + Calendly", cat: "LLM", tech: ["LangGraph", "Python"] },
+  { year: "2025", title: "M.Tech CSE — SVNIT Surat", cat: "Academic", tech: ["Research"] },
+  { year: "2024", title: "Weed Detection in Potato Fields", cat: "Vision", tech: ["YOLOv8", "Mask R-CNN"] },
+  { year: "2024", title: "GATE 2024 — AIR 2741 (CS)", cat: "Achievement", tech: ["DSA", "OS", "DBMS"] },
+  { year: "2024", title: "Image Denoising — Autoencoders", cat: "ML", tech: ["PyTorch"] },
+  { year: "2025", title: "Meta Hacker Cup — Global 5287", cat: "Achievement", tech: ["C++"] },
+  { year: "2023", title: "NPTEL Java — Top 5% Gold", cat: "Academic", tech: ["Java"] },
+  { year: "2023", title: "Wireless Networking Studies", cat: "Systems", tech: ["ns-3", "OMNeT++"] },
 ];
 
-const CATS = ["All", "Research", "Tooling", "Graphics", "Systems", "Language", "Audio", "Search"];
+const CATS = ["All", "HPC", "ML", "Vision", "LLM", "Systems", "Academic", "Achievement"];
 
 export function Archive() {
   const [q, setQ] = useState("");
@@ -67,7 +70,9 @@ export function Archive() {
         {rows.map((r, i) => (
           <a
             key={i}
-            href="#"
+            href="https://github.com/satyankshekhar"
+            target="_blank"
+            rel="noreferrer"
             data-magnetic="true"
             className="group grid grid-cols-[80px_1fr_140px_60px] items-center gap-4 border-b border-stroke/50 py-5 transition-all hover:bg-surface-1 hover:pl-3 md:grid-cols-[100px_1fr_200px_240px_60px]"
             style={{ transition: "padding 0.4s var(--ease-inertia), background-color 0.4s var(--ease-inertia)" }}

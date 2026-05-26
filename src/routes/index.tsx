@@ -11,10 +11,10 @@ import { Contact } from "@/components/portfolio/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AX · Engineered Interfaces" },
-      { name: "description", content: "A personal digital laboratory — systems, shaders, and interfaces built with intent." },
-      { property: "og:title", content: "AX · Engineered Interfaces" },
-      { property: "og:description", content: "A personal digital laboratory — systems, shaders, and interfaces built with intent." },
+      { title: "Satyank Shekhar · HPC & ML Engineer" },
+      { name: "description", content: "M.Tech CSE @ SVNIT Surat. GATE AIR 2741. Building at the seam of High-Performance Computing, GPU-accelerated ML, and scalable systems." },
+      { property: "og:title", content: "Satyank Shekhar · HPC & ML Engineer" },
+      { property: "og:description", content: "M.Tech CSE @ SVNIT Surat. GATE AIR 2741. Building at the seam of HPC, GPU-accelerated ML, and scalable systems." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
