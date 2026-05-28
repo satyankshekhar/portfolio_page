@@ -15,10 +15,12 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Class 8 student and young author of The Final Thesis. Creative writing, storytelling, and a love for fiction & mystery." },
       { property: "og:title", content: "Atharav Anand Mishra · Young Author" },
       { property: "og:description", content: "Class 8 student and young author of The Final Thesis." },
+      { property: "og:url", content: "https://thegeniusofatharav.lovable.app/" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "canonical", href: "https://thegeniusofatharav.lovable.app/" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",

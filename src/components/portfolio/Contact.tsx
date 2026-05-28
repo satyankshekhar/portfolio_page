@@ -42,7 +42,7 @@ export function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
-  const [stamp, setStamp] = useState("");
+  const [stamp, setStamp] = useState("—");
 
   useEffect(() => {
     setStamp(new Date().toISOString());

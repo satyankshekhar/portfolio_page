@@ -45,7 +45,7 @@ export function LeftHUD() {
 }
 
 export function RightHUD() {
-  const [t, setT] = useState("");
+  const [t, setT] = useState("--:--:-- UTC");
   useEffect(() => {
     const upd = () => {
       const d = new Date();
