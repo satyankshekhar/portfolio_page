@@ -11,10 +11,10 @@ import { Contact } from "@/components/portfolio/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Satyank Shekhar · HPC & ML Engineer" },
-      { name: "description", content: "M.Tech CSE @ SVNIT Surat. GATE AIR 2741. Building at the seam of High-Performance Computing, GPU-accelerated ML, and scalable systems." },
-      { property: "og:title", content: "Satyank Shekhar · HPC & ML Engineer" },
-      { property: "og:description", content: "M.Tech CSE @ SVNIT Surat. GATE AIR 2741. Building at the seam of HPC, GPU-accelerated ML, and scalable systems." },
+      { title: "Atharav Anand Mishra · Young Author" },
+      { name: "description", content: "Class 8 student and young author of The Final Thesis. Creative writing, storytelling, and a love for fiction & mystery." },
+      { property: "og:title", content: "Atharav Anand Mishra · Young Author" },
+      { property: "og:description", content: "Class 8 student and young author of The Final Thesis." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
