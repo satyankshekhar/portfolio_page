@@ -3,19 +3,19 @@ import { useMemo, useState } from "react";
 interface Row { year: string; title: string; cat: string; tech: string[]; }
 
 const ROWS: Row[] = [
-  { year: "2026", title: "Edge Distillation Pipeline", cat: "ML", tech: ["PyTorch", "CUDA"] },
-  { year: "2025", title: "Parallel Lyrebird Optimization", cat: "HPC", tech: ["CUDA", "OpenMP"] },
-  { year: "2025", title: "Agentic RAG + Calendly", cat: "LLM", tech: ["LangGraph", "Python"] },
-  { year: "2025", title: "M.Tech CSE — SVNIT Surat", cat: "Academic", tech: ["Research"] },
-  { year: "2024", title: "Weed Detection in Potato Fields", cat: "Vision", tech: ["YOLOv8", "Mask R-CNN"] },
-  { year: "2024", title: "GATE 2024 — AIR 2741 (CS)", cat: "Achievement", tech: ["DSA", "OS", "DBMS"] },
-  { year: "2024", title: "Image Denoising — Autoencoders", cat: "ML", tech: ["PyTorch"] },
-  { year: "2025", title: "Meta Hacker Cup — Global 5287", cat: "Achievement", tech: ["C++"] },
-  { year: "2023", title: "NPTEL Java — Top 5% Gold", cat: "Academic", tech: ["Java"] },
-  { year: "2023", title: "Wireless Networking Studies", cat: "Systems", tech: ["ns-3", "OMNeT++"] },
+  { year: "2026", title: "The Final Thesis — Debut Novel", cat: "Book", tech: ["Mystery", "Fiction"] },
+  { year: "2025", title: "Short Story Collection (in progress)", cat: "Writing", tech: ["Storytelling"] },
+  { year: "2025", title: "School Literary Festival — Participant", cat: "Achievement", tech: ["Literature"] },
+  { year: "2025", title: "Public Speaking — Class Assembly", cat: "Speaking", tech: ["Voice"] },
+  { year: "2024", title: "Creative Writing Workshop", cat: "Writing", tech: ["Craft"] },
+  { year: "2024", title: "Reading Journal — Mystery Volume", cat: "Reading", tech: ["Notes"] },
+  { year: "2024", title: "Science & Tech Exploration", cat: "Learning", tech: ["Curiosity"] },
+  { year: "2023", title: "First Drafts & Early Stories", cat: "Writing", tech: ["Practice"] },
+  { year: "2023", title: "Class Reader of the Term", cat: "Achievement", tech: ["Reading"] },
+  { year: "2023", title: "Story Ideas Notebook", cat: "Writing", tech: ["Ideas"] },
 ];
 
-const CATS = ["All", "HPC", "ML", "Vision", "LLM", "Systems", "Academic", "Achievement"];
+const CATS = ["All", "Book", "Writing", "Reading", "Speaking", "Learning", "Achievement"];
 
 export function Archive() {
   const [q, setQ] = useState("");
@@ -64,15 +64,13 @@ export function Archive() {
           <span>Year</span>
           <span>Title</span>
           <span className="hidden md:block">Category</span>
-          <span>Stack</span>
+          <span>Tags</span>
           <span className="text-right">Link</span>
         </div>
         {rows.map((r, i) => (
           <a
             key={i}
-            href="https://github.com/satyankshekhar"
-            target="_blank"
-            rel="noreferrer"
+            href="#contact"
             data-magnetic="true"
             className="group grid grid-cols-[80px_1fr_140px_60px] items-center gap-4 border-b border-stroke/50 py-5 transition-all hover:bg-surface-1 hover:pl-3 md:grid-cols-[100px_1fr_200px_240px_60px]"
             style={{ transition: "padding 0.4s var(--ease-inertia), background-color 0.4s var(--ease-inertia)" }}

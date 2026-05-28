@@ -14,44 +14,44 @@ const PROJECTS: P[] = [
   {
     id: "01",
     span: 8,
-    title: "Parallel Lyrebird Optimization",
-    category: "HPC / GPGPU",
-    year: "2025",
+    title: "The Final Thesis",
+    category: "Debut Novel",
+    year: "2026",
     hue: "from-[#00FFCC]/20 to-[#7000FF]/10",
-    stack: ["CUDA", "OpenMP", "C++"],
-    href: "https://github.com/satyankshekhar",
-    blurb: "14× CUDA · 1.13× OpenMP",
+    stack: ["Mystery", "Fiction", "Debut"],
+    href: "#contact",
+    blurb: "A first book · crafted with curiosity and care.",
   },
   {
     id: "02",
     span: 4,
-    title: "Agentic RAG System",
-    category: "LLM / Automation",
+    title: "Short Stories",
+    category: "Creative Writing",
     year: "2025",
     hue: "from-[#7000FF]/25 to-[#00FFCC]/5",
-    stack: ["LangGraph", "Calendly API"],
-    href: "https://github.com/satyankshekhar",
+    stack: ["Storytelling"],
+    href: "#archive",
   },
   {
     id: "03",
     span: 4,
-    title: "Weed Detection",
-    category: "Computer Vision",
-    year: "2024",
+    title: "Reading Journal",
+    category: "Fiction & Mystery",
+    year: "Ongoing",
     hue: "from-[#00FFCC]/15 to-transparent",
-    stack: ["YOLOv8", "Mask R-CNN"],
-    href: "https://github.com/satyankshekhar",
+    stack: ["Reading", "Notes"],
+    href: "#archive",
   },
   {
     id: "04",
     span: 8,
-    title: "Edge Distillation Pipeline",
-    category: "Knowledge Distillation",
-    year: "2026",
+    title: "Voice & Vision",
+    category: "Public Speaking",
+    year: "2025",
     hue: "from-[#7000FF]/15 to-[#00FFCC]/10",
-    stack: ["PyTorch", "CUDA", "ONNX"],
-    href: "https://github.com/satyankshekhar",
-    blurb: "3-stage deep learning pipeline optimized for edge inference.",
+    stack: ["Speaking", "Literature", "School"],
+    href: "#archive",
+    blurb: "Active in school literary activities — sharing ideas out loud.",
   },
 ];
 
@@ -62,11 +62,11 @@ export function ProjectMatrix() {
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">// 02 — Selected Work</p>
           <h2 className="mt-4 font-display text-4xl font-bold tracking-tight md:text-6xl">
-            Recent <span className="text-text-faint">/</span> Built
+            The <span className="text-text-faint">/</span> Bookshelf
           </h2>
         </div>
         <p className="hidden max-w-xs text-sm text-text-dim md:block">
-          Four pieces spanning HPC, computer vision, and agentic systems — research-grade work, shipped and measured.
+          A debut novel and the smaller works around it — stories, notes, and the practice of writing every day.
         </p>
       </div>
 
@@ -75,8 +75,6 @@ export function ProjectMatrix() {
           <a
             key={p.id}
             href={p.href}
-            target="_blank"
-            rel="noreferrer"
             data-magnetic="true"
             className={`group relative overflow-hidden border border-stroke bg-surface-1 transition-all ${p.span === 8 ? "md:col-span-8" : "md:col-span-4"}`}
             style={{ transition: "border-color 0.6s var(--ease-inertia)" }}
