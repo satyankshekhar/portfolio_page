@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Field({ label, value, onChange, type = "text", multi = false }: {
   label: string; value: string; onChange: (v: string) => void; type?: string; multi?: boolean;
@@ -42,8 +42,14 @@ export function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  const [stamp, setStamp] = useState("");
 
-  const stamp = new Date().toISOString();
+  useEffect(() => {
+    setStamp(new Date().toISOString());
+    const id = setInterval(() => setStamp(new Date().toISOString()), 1000);
+    return () => clearInterval(id);
+  }, []);
+
   const status = name || email || msg ? "ACTIVE_TYPING" : "IDLE";
 
   return (
