@@ -1,7 +1,7 @@
 import { Scramble } from "./Scramble";
 
 export function Hero() {
-  const headline = ["Words", "become", "worlds."];
+  const headline = ["Compute.", "Learn.", "Accelerate."];
   return (
     <section
       id="hero"
@@ -10,7 +10,7 @@ export function Hero() {
       <div className="mb-10 flex items-center gap-4">
         <span className="h-px w-10 bg-secondary" />
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-secondary">
-          // Atharav Anand Mishra — Portfolio v.2026.E1
+          // Satyank Shekhar — Portfolio v.2026.E1
         </p>
       </div>
 
@@ -34,11 +34,10 @@ export function Hero() {
       </h1>
 
       <p className="mt-10 max-w-xl text-base leading-[1.6] text-text-dim md:text-lg">
-        <span className="text-white">Class 8 student</span> and young author of{" "}
-        <span className="text-white">The Final Thesis</span>. I write stories at the edge of{" "}
-        <span className="text-white">curiosity, imagination</span>, and{" "}
-        <span className="text-white">mystery</span> — turning quiet thoughts into worlds worth
-        reading.
+        <span className="text-white">M.Tech CSE @ SVNIT Surat</span> · <span className="text-white">GATE AIR 2741</span>.
+        Bridging <span className="text-white">deep learning</span> and{" "}
+        <span className="text-white">hardware acceleration</span> — GPGPU programming, scalable
+        systems, and efficient model deployment.
       </p>
 
       <div className="mt-14 flex flex-wrap items-center gap-6">
@@ -48,7 +47,7 @@ export function Hero() {
           className="group inline-flex items-center gap-3 border border-stroke bg-surface-1 px-7 py-4 text-sm font-medium tracking-wide text-white transition-all hover:border-primary"
           style={{ transition: "border-color 0.4s var(--ease-inertia), transform 0.4s var(--ease-inertia)" }}
         >
-          <Scramble text="READ THE BOOK" trigger="hover" className="text-xs tracking-[0.2em]" />
+          <Scramble text="VIEW PROJECTS" trigger="hover" className="text-xs tracking-[0.2em]" />
           <span className="text-primary transition-transform group-hover:translate-x-1">→</span>
         </a>
         <a
@@ -61,10 +60,10 @@ export function Hero() {
       </div>
 
       <div className="pointer-events-none absolute left-6 bottom-8 hidden font-mono text-[10px] uppercase tracking-[0.3em] text-text-faint md:block">
-        ↓ scroll · chapter one
+        ↓ scroll · sector_01
       </div>
       <div className="pointer-events-none absolute right-6 bottom-8 hidden font-mono text-[10px] uppercase tracking-[0.3em] text-text-faint md:block">
-        young author · class viii
+        HPC · ML · systems
       </div>
     </section>
   );

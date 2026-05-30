@@ -1,6 +1,6 @@
 const LINKS = [
   { label: "Index", href: "#hero" },
-  { label: "Book", href: "#project-matrix" },
+  { label: "Work", href: "#project-matrix" },
   { label: "Archive", href: "#archive" },
   { label: "Contact", href: "#contact" },
 ];
@@ -17,7 +17,7 @@ export function Header() {
       }}
     >
       <a href="#hero" data-magnetic="true" className="font-display text-base font-bold tracking-tight text-white">
-        ⌁ ATHARAV<span className="text-primary">.</span>
+        ⌁ SATYANK<span className="text-primary">.</span>
       </a>
       <nav className="ml-auto flex items-center gap-8 text-xs uppercase tracking-[0.2em] text-white/70">
         {LINKS.map((l, i) => (
