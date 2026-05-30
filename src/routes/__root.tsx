@@ -77,6 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Atharav Anand Mishra" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@atharav_writes" },
+      { title: "Lovable App" },
+      { property: "og:title", content: "Lovable App" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "description", content: "A futuristic digital operating system for elite engineers, showcasing technical excellence and design craft." },
+      { property: "og:description", content: "A futuristic digital operating system for elite engineers, showcasing technical excellence and design craft." },
+      { name: "twitter:description", content: "A futuristic digital operating system for elite engineers, showcasing technical excellence and design craft." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/aba51c4e-8142-44e9-ac67-39d2541c6b17/id-preview-ac9b7898--b8911737-8057-4f49-9327-11a51219f071.lovable.app-1779875755427.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/aba51c4e-8142-44e9-ac67-39d2541c6b17/id-preview-ac9b7898--b8911737-8057-4f49-9327-11a51219f071.lovable.app-1779875755427.png" },
     ],
     links: [
       {
