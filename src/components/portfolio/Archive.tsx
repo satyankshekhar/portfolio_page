@@ -3,19 +3,19 @@ import { useMemo, useState } from "react";
 interface Row { year: string; title: string; cat: string; tech: string[]; }
 
 const ROWS: Row[] = [
-  { year: "2026", title: "The Final Thesis — Debut Novel", cat: "Book", tech: ["Mystery", "Fiction"] },
-  { year: "2025", title: "Short Story Collection (in progress)", cat: "Writing", tech: ["Storytelling"] },
-  { year: "2025", title: "School Literary Festival — Participant", cat: "Achievement", tech: ["Literature"] },
-  { year: "2025", title: "Public Speaking — Class Assembly", cat: "Speaking", tech: ["Voice"] },
-  { year: "2024", title: "Creative Writing Workshop", cat: "Writing", tech: ["Craft"] },
-  { year: "2024", title: "Reading Journal — Mystery Volume", cat: "Reading", tech: ["Notes"] },
-  { year: "2024", title: "Science & Tech Exploration", cat: "Learning", tech: ["Curiosity"] },
-  { year: "2023", title: "First Drafts & Early Stories", cat: "Writing", tech: ["Practice"] },
-  { year: "2023", title: "Class Reader of the Term", cat: "Achievement", tech: ["Reading"] },
-  { year: "2023", title: "Story Ideas Notebook", cat: "Writing", tech: ["Ideas"] },
+  { year: "2026", title: "M.Tech CSE @ SVNIT Surat", cat: "Education", tech: ["HPC", "ML"] },
+  { year: "2025", title: "GATE CSE — AIR 2741", cat: "Achievement", tech: ["Algorithms", "OS"] },
+  { year: "2025", title: "Meta Hacker Cup 2025 — Global Rank 5287", cat: "Achievement", tech: ["Round 1"] },
+  { year: "2025", title: "GPGPU Programming Research", cat: "Research", tech: ["CUDA", "C++"] },
+  { year: "2024", title: "LeetCode 400+ Problems Solved", cat: "Competitive", tech: ["DSA"] },
+  { year: "2024", title: "CodeChef 3★ — Max Rating 1772", cat: "Competitive", tech: ["CP"] },
+  { year: "2024", title: "Efficient Model Deployment", cat: "Research", tech: ["PyTorch", "ONNX"] },
+  { year: "2023", title: "NPTEL Java — Top 5% Gold Medalist", cat: "Achievement", tech: ["Java"] },
+  { year: "2023", title: "Scalable Systems Coursework", cat: "Education", tech: ["Distributed"] },
+  { year: "2023", title: "Machine Learning Foundations", cat: "Education", tech: ["ML"] },
 ];
 
-const CATS = ["All", "Book", "Writing", "Reading", "Speaking", "Learning", "Achievement"];
+const CATS = ["All", "Research", "Education", "Competitive", "Achievement"];
 
 export function Archive() {
   const [q, setQ] = useState("");

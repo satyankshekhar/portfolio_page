@@ -14,44 +14,44 @@ const PROJECTS: P[] = [
   {
     id: "01",
     span: 8,
-    title: "The Final Thesis",
-    category: "Debut Novel",
+    title: "GPGPU Model Acceleration",
+    category: "HPC · Deep Learning",
     year: "2026",
     hue: "from-[#00FFCC]/20 to-[#7000FF]/10",
-    stack: ["Mystery", "Fiction", "Debut"],
+    stack: ["CUDA", "PyTorch", "C++", "Triton"],
     href: "#contact",
-    blurb: "A first book · crafted with curiosity and care.",
+    blurb: "Bridging deep learning with hardware — efficient model deployment on GPUs.",
   },
   {
     id: "02",
     span: 4,
-    title: "Short Stories",
-    category: "Creative Writing",
+    title: "Scalable ML Systems",
+    category: "Distributed",
     year: "2025",
     hue: "from-[#7000FF]/25 to-[#00FFCC]/5",
-    stack: ["Storytelling"],
+    stack: ["Python", "Ray", "MLOps"],
     href: "#archive",
   },
   {
     id: "03",
     span: 4,
-    title: "Reading Journal",
-    category: "Fiction & Mystery",
+    title: "Competitive Programming",
+    category: "Algorithms",
     year: "Ongoing",
     hue: "from-[#00FFCC]/15 to-transparent",
-    stack: ["Reading", "Notes"],
+    stack: ["C++", "LeetCode 400+"],
     href: "#archive",
   },
   {
     id: "04",
     span: 8,
-    title: "Voice & Vision",
-    category: "Public Speaking",
+    title: "Meta Hacker Cup 2025",
+    category: "Global Rank 5287",
     year: "2025",
     hue: "from-[#7000FF]/15 to-[#00FFCC]/10",
-    stack: ["Speaking", "Literature", "School"],
+    stack: ["Algorithms", "DS", "Optimization"],
     href: "#archive",
-    blurb: "Active in school literary activities — sharing ideas out loud.",
+    blurb: "Round 1 finisher · CodeChef 3★ (max 1772) · NPTEL Java Gold Medalist.",
   },
 ];
 
@@ -62,11 +62,11 @@ export function ProjectMatrix() {
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">// 02 — Selected Work</p>
           <h2 className="mt-4 font-display text-4xl font-bold tracking-tight md:text-6xl">
-            The <span className="text-text-faint">/</span> Bookshelf
+            Project <span className="text-text-faint">/</span> Matrix
           </h2>
         </div>
         <p className="hidden max-w-xs text-sm text-text-dim md:block">
-          A debut novel and the smaller works around it — stories, notes, and the practice of writing every day.
+          Research, systems, and competitive programming — work at the intersection of HPC and ML.
         </p>
       </div>
 
