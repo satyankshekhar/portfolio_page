@@ -60,15 +60,16 @@ export function Contact() {
           Initiate <span className="text-text-faint">/</span> contact
         </h2>
         <p className="mt-6 max-w-xl text-sm text-text-dim">
-          For research collaborations, HPC/ML opportunities, or just a good algorithmic
-          conversation — drop a message.
+          Open to software engineering roles, AI systems work, and collaborations on
+          agentic or backend projects. Drop a line.
         </p>
       </div>
 
-      <div className="mb-14 grid gap-3 font-mono text-xs uppercase tracking-[0.25em] text-text-dim md:grid-cols-3">
+      <div className="mb-14 grid gap-3 font-mono text-xs uppercase tracking-[0.25em] text-text-dim md:grid-cols-2 lg:grid-cols-4">
         <a href="mailto:satyank.shekhar14@gmail.com" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ satyank.shekhar14@gmail.com</a>
-        <a href="https://satyank.me" target="_blank" rel="noreferrer" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ satyank.me</a>
-        <div data-magnetic="true" className="border border-stroke px-4 py-3">→ SVNIT Surat · M.Tech CSE</div>
+        <a href="https://satyankshekhar.me" target="_blank" rel="noreferrer" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ satyankshekhar.me</a>
+        <a href="https://linkedin.com/in/satyankshekhar" target="_blank" rel="noreferrer" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ linkedin/satyankshekhar</a>
+        <a href="https://github.com/satyankshekhar" target="_blank" rel="noreferrer" data-magnetic="true" className="border border-stroke px-4 py-3 hover:border-primary hover:text-white">→ github/satyankshekhar</a>
       </div>
 
       <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -102,11 +103,11 @@ export function Contact() {
             <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
             <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
             <span className="ml-3 font-mono text-xs text-text-dim">
-              satyank@gpu-node:~/inbox
+              satyank@dev:~/inbox
             </span>
           </div>
           <pre className="overflow-x-auto p-6 font-mono text-[12px] leading-[1.7] text-text-dim">
-{`[sys] Kernel online. GPU warm.
+{`[sys] Session online.
 [sys] Awaiting transmission...
 
 `}
@@ -123,7 +124,7 @@ export function Contact() {
       </div>
 
       <footer className="mt-24 flex flex-col items-start justify-between gap-4 border-t border-stroke pt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-text-faint md:flex-row md:items-center">
-        <span>© 2026 satyank shekhar · hpc · ml · systems</span>
+        <span>© 2026 satyank shekhar · software · ai systems · backend</span>
         <span>signal: <span className="text-primary">online</span> · svnit surat</span>
       </footer>
     </section>
