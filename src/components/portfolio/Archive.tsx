@@ -3,19 +3,21 @@ import { useMemo, useState } from "react";
 interface Row { year: string; title: string; cat: string; tech: string[]; }
 
 const ROWS: Row[] = [
-  { year: "2026", title: "M.Tech CSE @ SVNIT Surat", cat: "Education", tech: ["HPC", "ML"] },
-  { year: "2025", title: "GATE CSE — AIR 2741", cat: "Achievement", tech: ["Algorithms", "OS"] },
-  { year: "2025", title: "Meta Hacker Cup 2025 — Global Rank 5287", cat: "Achievement", tech: ["Round 1"] },
-  { year: "2025", title: "GPGPU Programming Research", cat: "Research", tech: ["CUDA", "C++"] },
-  { year: "2024", title: "LeetCode 400+ Problems Solved", cat: "Competitive", tech: ["DSA"] },
+  { year: "2025", title: "M.Tech CSE @ SVNIT Surat (2025–2027)", cat: "Education", tech: ["Systems", "AI"] },
+  { year: "2025", title: "GATE CS — AIR 2741", cat: "Achievement", tech: ["Algorithms", "OS", "DBMS"] },
+  { year: "2025", title: "Meta Hacker Cup 2025 — Global Rank 5287 (R1)", cat: "Competitive", tech: ["Algorithms"] },
+  { year: "2026", title: "Autonomous Research Analyst", cat: "Project", tech: ["FastAPI", "Agentic AI"] },
+  { year: "2025", title: "Agentic RAG Scheduling System", cat: "Project", tech: ["LangGraph", "ChromaDB"] },
+  { year: "2025", title: "Weed Detection & Segmentation", cat: "Project", tech: ["YOLOv8", "Mask R-CNN"] },
+  { year: "2024", title: "Parallel Lyrebird Optimization", cat: "Project", tech: ["CUDA", "OpenMP"] },
+  { year: "2024", title: "Space Shuttle — Browser Arcade", cat: "Project", tech: ["JavaScript"] },
+  { year: "2024", title: "LeetCode — 400+ Problems Solved", cat: "Competitive", tech: ["DSA"] },
   { year: "2024", title: "CodeChef 3★ — Max Rating 1772", cat: "Competitive", tech: ["CP"] },
-  { year: "2024", title: "Efficient Model Deployment", cat: "Research", tech: ["PyTorch", "ONNX"] },
-  { year: "2023", title: "NPTEL Java — Top 5% Gold Medalist", cat: "Achievement", tech: ["Java"] },
-  { year: "2023", title: "Scalable Systems Coursework", cat: "Education", tech: ["Distributed"] },
-  { year: "2023", title: "Machine Learning Foundations", cat: "Education", tech: ["ML"] },
+  { year: "2023", title: "NPTEL Java Programming — Top 5% Gold Medal", cat: "Achievement", tech: ["Java"] },
+  { year: "2023", title: "B.Tech CSE", cat: "Education", tech: ["CS"] },
 ];
 
-const CATS = ["All", "Research", "Education", "Competitive", "Achievement"];
+const CATS = ["All", "Project", "Education", "Competitive", "Achievement"];
 
 export function Archive() {
   const [q, setQ] = useState("");

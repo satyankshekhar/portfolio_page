@@ -1,7 +1,7 @@
 import { Scramble } from "./Scramble";
 
 export function Hero() {
-  const headline = ["Compute.", "Learn.", "Accelerate."];
+  const headline = ["Design.", "Build.", "Ship."];
   return (
     <section
       id="hero"
@@ -10,7 +10,7 @@ export function Hero() {
       <div className="mb-10 flex items-center gap-4">
         <span className="h-px w-10 bg-secondary" />
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-secondary">
-          // Satyank Shekhar — Portfolio v.2026.E1
+          // Satyank Shekhar — Software Engineer · Portfolio v.2026
         </p>
       </div>
 
@@ -35,9 +35,10 @@ export function Hero() {
 
       <p className="mt-10 max-w-xl text-base leading-[1.6] text-text-dim md:text-lg">
         <span className="text-white">M.Tech CSE @ SVNIT Surat</span> · <span className="text-white">GATE AIR 2741</span>.
-        Bridging <span className="text-white">deep learning</span> and{" "}
-        <span className="text-white">hardware acceleration</span> — GPGPU programming, scalable
-        systems, and efficient model deployment.
+        I build <span className="text-white">AI-powered software systems</span>,{" "}
+        <span className="text-white">autonomous agents</span>, and{" "}
+        <span className="text-white">scalable backends</span> — from RAG pipelines and
+        agentic workflows to computer vision and clean REST APIs.
       </p>
 
       <div className="mt-14 flex flex-wrap items-center gap-6">
@@ -63,7 +64,7 @@ export function Hero() {
         ↓ scroll · sector_01
       </div>
       <div className="pointer-events-none absolute right-6 bottom-8 hidden font-mono text-[10px] uppercase tracking-[0.3em] text-text-faint md:block">
-        HPC · ML · systems
+        ai systems · backend · agents
       </div>
     </section>
   );

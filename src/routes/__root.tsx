@@ -76,8 +76,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Satyank Shekhar" },
       { name: "twitter:card", content: "summary" },
-      { title: "Satyank Shekhar · HPC & ML Engineer" },
-      { name: "description", content: "M.Tech CSE @ SVNIT Surat · GATE AIR 2741. HPC, ML, GPGPU, and scalable systems." },
+      { title: "Satyank Shekhar · Software Engineer" },
+      { name: "description", content: "M.Tech CSE @ SVNIT Surat · GATE AIR 2741. Software engineer building AI-powered systems, autonomous agents, RAG pipelines, and scalable backends." },
     ],
     links: [
       {

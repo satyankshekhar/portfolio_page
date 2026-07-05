@@ -14,44 +14,62 @@ const PROJECTS: P[] = [
   {
     id: "01",
     span: 8,
-    title: "GPGPU Model Acceleration",
-    category: "HPC · Deep Learning",
+    title: "Autonomous Research Analyst",
+    category: "Multi-Agent · RAG",
     year: "2026",
     hue: "from-[#00FFCC]/20 to-[#7000FF]/10",
-    stack: ["CUDA", "PyTorch", "C++", "Triton"],
+    stack: ["Python", "FastAPI", "Agentic AI", "REST"],
     href: "#contact",
-    blurb: "Bridging deep learning with hardware — efficient model deployment on GPUs.",
+    blurb:
+      "End-to-end multi-agent platform that turns a single research question into a structured, source-backed report — planning, retrieval, verification, reflection, and generation across offline and online providers.",
   },
   {
     id: "02",
     span: 4,
-    title: "Scalable ML Systems",
-    category: "Distributed",
+    title: "Agentic RAG Scheduling",
+    category: "LangGraph · GPT",
     year: "2025",
     hue: "from-[#7000FF]/25 to-[#00FFCC]/5",
-    stack: ["Python", "Ray", "MLOps"],
-    href: "#archive",
+    stack: ["Flask", "LangGraph", "ChromaDB", "Calendly"],
+    href: "#contact",
+    blurb:
+      "Admission assistant combining retrieval-augmented answers, multi-turn scheduling, and automated lead scoring over a LangGraph workflow.",
   },
   {
     id: "03",
     span: 4,
-    title: "Competitive Programming",
-    category: "Algorithms",
-    year: "Ongoing",
+    title: "Weed Detection & Segmentation",
+    category: "Computer Vision",
+    year: "2025",
     hue: "from-[#00FFCC]/15 to-transparent",
-    stack: ["C++", "LeetCode 400+"],
-    href: "#archive",
+    stack: ["YOLOv8", "Mask R-CNN", "PyTorch"],
+    href: "#contact",
+    blurb:
+      "Detection and instance segmentation of weeds in potato fields — dataset preparation, training, and evaluation for precision agriculture.",
   },
   {
     id: "04",
-    span: 8,
-    title: "Meta Hacker Cup 2025",
-    category: "Global Rank 5287",
-    year: "2025",
+    span: 4,
+    title: "Parallel Lyrebird Optimization",
+    category: "Parallel Computing",
+    year: "2024",
     hue: "from-[#7000FF]/15 to-[#00FFCC]/10",
-    stack: ["Algorithms", "DS", "Optimization"],
-    href: "#archive",
-    blurb: "Round 1 finisher · CodeChef 3★ (max 1772) · NPTEL Java Gold Medalist.",
+    stack: ["CUDA", "OpenMP", "C++"],
+    href: "#contact",
+    blurb:
+      "CUDA and OpenMP implementations of the Lyrebird Optimization Algorithm, benchmarked against sequential baselines.",
+  },
+  {
+    id: "05",
+    span: 4,
+    title: "Space Shuttle",
+    category: "Game · Web",
+    year: "2024",
+    hue: "from-[#00FFCC]/10 to-[#7000FF]/10",
+    stack: ["JavaScript", "Canvas"],
+    href: "#contact",
+    blurb:
+      "Browser-based arcade shooter in vanilla JS with collision detection, responsive input, and smooth frame-timed animation.",
   },
 ];
 
@@ -66,7 +84,7 @@ export function ProjectMatrix() {
           </h2>
         </div>
         <p className="hidden max-w-xs text-sm text-text-dim md:block">
-          Research, systems, and competitive programming — work at the intersection of HPC and ML.
+          Agentic systems, RAG pipelines, computer vision, and parallel compute — real projects, shipped end-to-end.
         </p>
       </div>
 
@@ -111,7 +129,7 @@ export function ProjectMatrix() {
                     {p.title}
                   </h3>
                   {p.blurb && (
-                    <p className="mt-3 max-w-md font-mono text-[11px] uppercase tracking-[0.2em] text-primary">
+                    <p className="mt-3 max-w-md text-sm leading-[1.55] text-text-dim">
                       {p.blurb}
                     </p>
                   )}
